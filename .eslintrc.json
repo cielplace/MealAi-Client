@@ -1,0 +1,56 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-typescript",
+    "prettier"
+    // "airbnb/hook",
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react", "@typescript-eslint", "tailwindcss"],
+  "ignorePatterns": ["craco.config.js","tailwind.config.js" ],
+  "rules": {
+    "quotes": ["error", "double"], // 더블 쿼터 사용
+    "linebreak-style": 0,
+    "import/no-dynamic-require": 0,
+    "import/no-unresolved": 0,
+    "import/prefer-default-export": 0,
+    "global-require": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "import/extensions": 0,
+    "no-use-before-define": 0,
+    "@typescript-eslint/no-empty-interface": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["off"],
+    "@typescript-eslint/no-var-requires": 0,
+    "no-shadow": "off",
+    "react/prop-types": 0,
+    "no-empty-pattern": 0,
+    "no-alert": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "react/react-in-jsx-scope": "off"
+  }
+}
