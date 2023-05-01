@@ -1,3 +1,0 @@
-@tailwind base; /* tailwind 기본 스타일 및 확장된 스타일 주입 */
-@tailwind components; /* tailwind 기본 컴포넌트 클래스 및 확장된 컴포넌트 클래스 주입 */
-@tailwind utilities; /* tailwind 기본 유틸리티 클래스 및 확장된 유틸리티 클래스 주입 */
